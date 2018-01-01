@@ -1,0 +1,146 @@
+*,p{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  overflow-x: hidden;
+}
+body{
+  width: 100%;
+}
+h3{
+  font-size: 24px;
+
+}
+
+/*公共样式*/
+.Home_pageContainner{
+  position: relative;
+  width: 100%;
+}
+
+.ContentBox{
+  width: 100%;
+  height:100vh;
+  min-height: 600px;
+}
+
+.Sakura{
+  background-color: #fe9eba;
+}
+
+.White{
+  background-color: #FAFAFA;
+}
+
+.Yellow{
+  background-color: #FFDE01;
+}
+
+.Skyblue{
+  background-color: #87ceeb
+}
+
+.SecondWhite{
+  background-color: #FFFEFF;
+}
+
+.ThirdWhite{
+  background-color: #FFFFFF;
+}
+
+/*头部样式*/
+.HeaderTop{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeaderText{
+  line-height: 50px;
+
+  font-weight: normal;
+  margin:20px 0 0 30px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+.HeaderTop svg{
+  margin: 20px 30px 0 0;
+}
+
+.Headervideo{
+  width: 30%;
+  height: 300px;
+  min-width: 400px;
+  margin-left: 220px;
+  margin-top:150px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.Headervideo video{
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.CompareBox4{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.CompareBox4 .unit4{
+  width: 50%;
+  height: 580px;
+  border-color: #FAFAFA;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing:border-box;
+}
+.CompareBox4 .unit4:nth-child(2),.CompareBox4 .unit4:nth-child(4){
+  border-right-width: 10px;
+}
+.CompareBox4 .unit4:nth-child(1),.CompareBox4 .unit4:nth-child(3){
+  border-left-width: 10px;
+}
+.CompareBox4 .unit4:nth-child(1),.CompareBox4 .unit4:nth-child(2){
+  border-top-width: 10px;
+}
+.CompareBox4 .unit4:nth-child(3),.CompareBox4 .unit4:nth-child(4){
+  border-bottom-width: 10px;
+}
+.Whitemodel{
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255,255,255,1);
+}
+.maxModel{
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,1);
+}
+
+/* .Videomodel svg{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+
+.Videomodel svg:hover path{
+  fill: #FFFEFF;
+} */
