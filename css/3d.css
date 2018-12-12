@@ -1,0 +1,12 @@
+.threeDPictureWall{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.threeDPictureWall img{
+    max-width: 240px;
+    max-height: 180px;
+    margin-left: 18px;
+}

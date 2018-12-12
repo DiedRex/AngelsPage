@@ -1,0 +1,13 @@
+.FlatworkPictureWall{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.FlatworkPictureWall img{
+    max-width: 360px;
+    width: 33%;
+    padding-top: 15px;
+    padding-left: 15px;
+}

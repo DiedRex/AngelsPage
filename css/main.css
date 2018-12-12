@@ -57,9 +57,11 @@ h3{
   justify-content: space-between;
   align-items: center;
 }
+.HeaderTop svg:hover{
+  fill: orange;
+}
 .HeaderText{
   line-height: 50px;
-
   font-weight: normal;
   margin:20px 0 0 30px;
   border-top: 2px solid #000000;
@@ -67,9 +69,66 @@ h3{
 }
 .HeaderTop svg{
   margin: 20px 30px 0 0;
+  cursor: pointer;
 }
-
-.Headervideo{
+.BurgerBox{
+  position: absolute;
+  display: none;
+  top: 65px;
+  right: 30px;
+  max-width: 240px;
+  transition: transform ease-in-out 0.3s,box-shadow .3s ease-in-out;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0 1px 3px rgba(0,0,0,.02), 0 4px 8px rgba(0,0,0,.02);
+  border-radius: 3px;
+  overflow: hidden;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.02);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.02), 0 4px 8px rgba(0,0,0,.02);
+}
+.BurgerBox li{
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: #FAFAFA;
+  padding: 15px 42px;
+  transition: transform ease-in-out 0.3s,box-shadow .3s ease-in-out
+  
+}
+.BurgerBox li:hover{
+   background-color: #FAFAFA;
+   color: #999999;
+}
+.MainBox{
+  background:url("../images/backgroundImage.jpg") center center no-repeat;
+}
+/*用户头像*/
+.Avatar{
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  transform: translateX(-50%);
+  margin-top: -40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 10px solid #fe9eba;
+  background: url('../images/Firstpic.jpg') no-repeat 0 -20px;
+  background-size: cover;
+}
+.Introduction{
+  position: absolute;
+  left: 50%;
+  top: 450px;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 60%;
+  padding: 10px 20px;
+}
+.Introduction h1{
+  font-size: 36px;
+  color: #FAFAFA;
+}
+/* .Headervideo{
   width: 30%;
   height: 300px;
   min-width: 400px;
@@ -82,7 +141,7 @@ h3{
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
-}
+} */
 
 .CompareBox4{
   height: auto;
@@ -94,24 +153,10 @@ h3{
   align-items: center;
 }
 .CompareBox4 .unit4{
-  width: 50%;
-  height: 580px;
   border-color: #FAFAFA;
   border-style: solid;
   border-width: 5px;
   box-sizing:border-box;
-}
-.CompareBox4 .unit4:nth-child(2),.CompareBox4 .unit4:nth-child(4){
-  border-right-width: 10px;
-}
-.CompareBox4 .unit4:nth-child(1),.CompareBox4 .unit4:nth-child(3){
-  border-left-width: 10px;
-}
-.CompareBox4 .unit4:nth-child(1),.CompareBox4 .unit4:nth-child(2){
-  border-top-width: 10px;
-}
-.CompareBox4 .unit4:nth-child(3),.CompareBox4 .unit4:nth-child(4){
-  border-bottom-width: 10px;
 }
 .Whitemodel{
   position: absolute;
@@ -169,14 +214,85 @@ h3{
 .unit4 .header .Title-detail{
 
 }
-/* .Videomodel svg{
-  position: relative;
+.PictureWall{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.SecondWhite h4{
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  padding:  30px 0;
+}
+
+.pin{
+  box-shadow: 0 1px 3px rgba(0,0,0,.02), 0 4px 8px rgba(0,0,0,.02);
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-transition: transform .15s ease-in-out,box-shadow .15s ease-in-out;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.02);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.02), 0 4px 8px rgba(0,0,0,.02);
+}
+/*h5页面*/
+.QRcode{
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  padding: 15px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  cursor: pointer;
+}
+.QRcode img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.Videomodel svg:hover path{
-  fill: #FFFEFF;
-} */
+/*媒体查询*/
+@media (max-width: 768px){
+  .unit4{
+    width: 100%;
+    height: 420px;
+    border-width: 10px;
+  }
+  .unit4 .header{
+    color: #FAFAFA;
+    font-size: 36px;
+    padding-top: 20px;
+  }
+  .unit4 svg{
+    margin-top: 40px;
+  }
+}
+
+
+@media (min-width: 768px){
+  .unit4{
+    width: 50%;
+    height: 580px;
+  }
+  .unit4 .header{
+    color: #FAFAFA;
+    font-size: 48px;
+    padding-top: 30px;
+  }
+  .unit4 svg{
+    margin-top: 80px;
+  }
+  .CompareBox4 .unit4:nth-child(2),.CompareBox4 .unit4:nth-child(4){
+    border-right-width: 10px;
+  }
+  .CompareBox4 .unit4:nth-child(1),.CompareBox4 .unit4:nth-child(3){
+    border-left-width: 10px;
+  }
+  .CompareBox4 .unit4:nth-child(1),.CompareBox4 .unit4:nth-child(2){
+    border-top-width: 10px;
+  }
+  .CompareBox4 .unit4:nth-child(3),.CompareBox4 .unit4:nth-child(4){
+    border-bottom-width: 10px;
+  }
+}
