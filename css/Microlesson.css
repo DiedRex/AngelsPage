@@ -1,0 +1,73 @@
+body{
+    background:url('../images/backgroundImage.jpg');
+    padding-bottom:10px;
+}
+.centerBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Title li{
+    font-size:16px;
+    padding: 10px 30px;
+    width: 25%;
+    color: #FAFAFA;
+    text-align: center;
+    border: 1px solid #FAFAFA;
+    cursor: pointer;
+}
+.Title li:hover{
+    background: #FAFAFA;
+    color: #000000;
+}
+.Title .active{
+    background: #FAFAFA;
+    color: #000000;
+}
+.active{
+    display: block;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    top: 180px;
+}
+/*覆盖*/
+.MoreVideoContent label {
+    color: #FAFAFA;
+}
+@media (max-width: 890px){
+    .Title {
+        flex-wrap: wrap;
+    }
+    .Title li{
+        margin-top: 8px;
+    }
+    .content{
+        top: 240px;
+    }
+}
+
+@media (min-width: 890px){
+    .Title {
+        flex-wrap: nowrap
+    }
+    .content{
+        top: 180px;
+    }
+}

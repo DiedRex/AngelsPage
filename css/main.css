@@ -58,7 +58,7 @@ h3{
   align-items: center;
 }
 .HeaderTop svg:hover{
-  fill: orange;
+  fill: White;
 }
 .HeaderText{
   line-height: 50px;
@@ -112,9 +112,10 @@ h3{
   height: 150px;
   border-radius: 100px;
   border: 10px solid #fe9eba;
-  background: url('../images/Firstpic.jpg') no-repeat 0 -20px;
-  background-size: cover;
+  background: url('../images//Avatar.jpg') no-repeat -50px -30px;
+  background-size: 200%;
 }
+
 .Introduction{
   position: absolute;
   left: 50%;
@@ -124,24 +125,11 @@ h3{
   width: 60%;
   padding: 10px 20px;
 }
+
 .Introduction h1{
   font-size: 36px;
   color: #FAFAFA;
 }
-/* .Headervideo{
-  width: 30%;
-  height: 300px;
-  min-width: 400px;
-  margin-left: 220px;
-  margin-top:150px;
-  font-size: 18px;
-  cursor: pointer;
-}
-.Headervideo video{
-  width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-} */
 
 .CompareBox4{
   height: auto;
