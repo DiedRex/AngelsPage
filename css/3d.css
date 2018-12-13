@@ -10,3 +10,22 @@
     max-height: 180px;
     margin-left: 18px;
 }
+
+@media (max-width: 890px){
+    .threeDPictureWall{
+        justify-content: center;
+    }
+    .threeDPictureWall img{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 890px){
+    .threeDPictureWall{
+        justify-content: flex-start;
+    }
+    .threeDPictureWall img{
+        max-height: 180px;
+        margin-left: 18px;
+    }
+}

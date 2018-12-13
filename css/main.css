@@ -247,6 +247,12 @@ h3{
     height: 420px;
     border-width: 10px;
   }
+  .Avatar{
+    top: 240px;
+  }
+  .Introduction{
+    top: 360px;
+  }
   .unit4 .header{
     color: #FAFAFA;
     font-size: 36px;
@@ -259,6 +265,12 @@ h3{
 
 
 @media (min-width: 768px){
+  .Avatar{
+    top:300px;
+  }
+  .Introduction{
+    top: 450px;
+  }
   .unit4{
     width: 50%;
     height: 580px;
