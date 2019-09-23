@@ -24,7 +24,7 @@ body{
 }
 .Title li{
     font-size:16px;
-    padding: 10px 30px;
+    padding: 10px 10px;
     width: 25%;
     color: #FAFAFA;
     text-align: center;
@@ -57,6 +57,8 @@ body{
     }
     .Title li{
         margin-top: 8px;
+        font-size: 13px;
+        width: 40%;
     }
     .content{
         top: 240px;
