@@ -95,13 +95,13 @@
   <!--吐司toast-->
 
   <script src="./js/angular.min.js"></script>
-  <script src="http://mockjs.com/dist/mock.js"></script>
+  <script src="https://mockjs.com/dist/mock.js"></script>
   <script>
       var app = angular.module('myapp', []);
       app.controller("ngCtrl",['$scope','$http',function($scope,$http){
         $scope.picList = [];
         $http({
-          url:'http://test.com',
+          url:'https://test.com',
           method:'get',
         }).success(function(response){
           // $scope.picList = response;
@@ -112,7 +112,7 @@
       var obj = {'aa':'11', 'bb':'22', 'cc':'33', 'dd':'44'};
       var Random = Mock.Random;
       // Mock响应模板
-      Mock.mock('http://test.com', {
+      Mock.mock('https://test.com', {
           "user|5-8": [{   // 随机生成1到3个数组元素
               'name': '@cname',  // 中文名称
               'id|+1': 88,    // 属性值自动加 1，初始值为88
